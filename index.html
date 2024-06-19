@@ -8,19 +8,47 @@
   <title>Frontend Mentor | Ping coming soon page</title>
 </head>
 <body>
+  <main>
+    <section class="coming-soon">
+      <header class="coming-soon__header">
+        <img src="./images/logo.svg" alt="Ping logo" class="coming-soon__logo">
+        <h1 class="coming-soon__title">We are launching soon!</h1>
+        <p class="coming-soon__description">Subscribe and get notified</p>
+      </header>
 
-  We are launching soon!
+      <form method="POST" action="javascript:void(0);" class="coming-soon__form">
+        <label for="coming-soon__email-input-id" class="u-sr-only">Email Address</label>
+        <input type="email" id="coming-soon__email-input-id" class="coming-soon__email-input" placeholder="Your email address..." required>
+        <button type="submit" class="coming-soon__submit-button">Notify Me</button>
+      </form>
+      <img src="./images/illustration-dashboard.png" alt="Illustration of a dashboard">
 
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
+      <footer class="coming-soon__footer">
+        <ul class="coming-soon__social-links" aria-label="Social Links">
+          <li class="coming-soon__social-links-item">
+            <a rel="noreferrer noopener" href="#">
+              <img src="./images/facebook-logo.svg" alt="Facebook" class="coming-soon__social-links-logo">
+            </a>
+          </li>
+          <li class="coming-soon__social-links-item">
+            <a rel="noreferrer noopener" href="#">
+              <img src="./images/twitter-logo.svg" alt="Twitter" class="coming-soon__social-links-logo">
+            </a>
+          </li>
+          <li class="coming-soon__social-links-item">
+            <a rel="noreferrer noopener" href="#">
+              <img src="./images/instagram-logo.svg" alt="Instagram" class="coming-soon__social-links-logo">
+            </a>
+          </li>
+        </ul>
+        <p class="coming-soon__footer">&copy; Copyright Ping. All rights reserved.</p>
+      </footer>
+    </section>
+  </main>
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a rel="noreferrer noopener" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a rel="noreferrer noopener" href="https://github.com/CardboardPL">CardboardPL</a>.
     </p>
   </footer>
 </body>
