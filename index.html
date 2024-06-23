@@ -14,32 +14,32 @@
     <section class="coming-soon">
       <header class="coming-soon__header">
         <img src="./images/logo.svg" alt="Ping logo" class="coming-soon__logo">
-        <h1 class="coming-soon__title">We are launching soon!</h1>
+        <h1 class="coming-soon__title">We are launching <span class="u-fw-bold">soon!</span></h1>
         <p class="coming-soon__description">Subscribe and get notified</p>
       </header>
 
       <form method="POST" action="javascript:void(0);" class="coming-soon__form">
         <label for="coming-soon__email-input-id" class="u-sr-only">Email Address</label>
         <input type="email" id="coming-soon__email-input-id" class="coming-soon__email-input" placeholder="Your email address..." required>
-        <button type="submit" class="coming-soon__submit-button">Notify Me</button>
+        <button type="submit" class="coming-soon__submit-button u-fw-sm-bold">Notify Me</button>
       </form>
-      <img src="./images/illustration-dashboard.png" alt="Illustration of a dashboard">
+      <img src="./images/illustration-dashboard.png" alt="Illustration of a dashboard" class="coming-soon__illustration">
 
       <footer class="coming-soon__footer">
         <ul class="coming-soon__social-links" aria-label="Social Links">
           <li class="coming-soon__social-links-item">
             <a rel="noreferrer noopener" href="#">
-              <img src="./images/facebook-logo.svg" alt="Facebook" class="coming-soon__social-links-logo">
+              <ion-icon name="logo-facebook" class="coming-soon__social-links-logo"></ion-icon>
             </a>
           </li>
           <li class="coming-soon__social-links-item">
             <a rel="noreferrer noopener" href="#">
-              <img src="./images/twitter-logo.svg" alt="Twitter" class="coming-soon__social-links-logo">
+              <ion-icon name="logo-twitter" class="coming-soon__social-links-logo"></ion-icon>
             </a>
           </li>
           <li class="coming-soon__social-links-item">
             <a rel="noreferrer noopener" href="#">
-              <img src="./images/instagram-logo.svg" alt="Instagram" class="coming-soon__social-links-logo">
+              <ion-icon name="logo-instagram" class="coming-soon__social-links-logo"></ion-icon>
             </a>
           </li>
         </ul>
@@ -53,5 +53,8 @@
       Coded by <a rel="noreferrer noopener" href="https://github.com/CardboardPL">CardboardPL</a>.
     </p>
   </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
