@@ -10,6 +10,10 @@
 }
 
 /* Typographic Utility Classes */
+.u-fw-sm-bold {
+  font-weight: var(--font-weight-semi-bold);
+}
+
 .u-fw-bold {
   font-weight: var(--font-weight-bold);
 }
