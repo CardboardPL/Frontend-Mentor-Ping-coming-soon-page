@@ -3,6 +3,7 @@
   align-items: center;
   flex-direction: column;
   padding-top: 5.375rem;
+  padding-bottom: 2.9625rem;
 }
 
 .coming-soon__header {
@@ -28,7 +29,7 @@
 
 .coming-soon__description {
   letter-spacing: 0.0024038461538462rem;
-  margin-bottom: 1.875rem;
+  margin-bottom: 2.3125rem;
 }
 
 .coming-soon__email-input {
@@ -40,10 +41,10 @@
   background-color: transparent;
   height: 3.5rem;
   width: 26.3125rem;
-  padding: 20px 30px;
+  padding: 1.25rem 1.875rem;
   border: 0.0625rem solid hsl(229, 27%, 85%);
   border-radius: 26.3125rem;
-  margin-right: 11px;
+  margin-right: 0.6875rem;
   outline: none;
 }
 
@@ -60,14 +61,13 @@
   font-family: inherit;
   color: white;
   background-color: var(--color-primary);
-  height: 56px;
-  width: 200px;
+  height: 3.5rem;
+  width: 12.5rem;
   border: none;
-  border-radius: 56px;
-  box-shadow: -3px 4px 16px var(--color-secondary-1);
-  margin-bottom: 93px;
+  border-radius: 3.5rem;
+  box-shadow: -0.1875rem 0.25rem 1rem var(--color-secondary-1);
+  margin-bottom: 5.375rem;
   cursor: pointer;
-  
 }
 
 .coming-soon__submit-button:hover,
@@ -76,23 +76,56 @@
 }
 
 .coming-soon__illustration {
-  width: 640px;
-  margin-bottom: 100px;
+  width: 40rem;
+  margin-bottom: 4.5rem;
 }
 
 .coming-soon__social-links {
   display: flex;
   justify-content: center;
   list-style-type: none;
+  margin-bottom: 1.5rem;
+}
+
+.coming-soon__social-links-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.9375rem;
+  height: 1.9375rem;
+  border: 0.0625rem solid hsl(229, 27%, 85%);
+  border-radius: 50%;
+  margin-right: 0.8125rem;
+  transition: background-color 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.coming-soon__social-links:first-child {
+  margin-left: 0.75rem;
+}
+
+.coming-soon__social-links-item:hover,
+.coming-soon__social-links-item:focus-within {
+  background-color: var(--color-primary);
+}
+
+.coming-soon__social-links-item:hover .coming-soon__social-links-logo,
+.coming-soon__social-links-item:focus-within .coming-soon__social-links-logo {
+  color: white;
+}
+
+.coming-soon__social-links-item > a {
+  line-height: 0;
 }
 
 .coming-soon__social-links-logo {
-  margin-right: 10px;
+  font-size: 0.8125rem;
   color: var(--color-primary);
-  border: 1px solid hsl(229, 27%, 85%);
+  transition: color 0.15s ease-in-out;
 }
 
 .coming-soon__footer-copyright {
-  font-size: 12px;
+  font-size: 0.75rem;
+  letter-spacing: 0.0016891891891892rem;
   color: var(--color-neutral-1);
 }
