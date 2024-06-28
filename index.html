@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="./stylesheets/coming-soon.css">
   <link rel="stylesheet" type="text/css" href="./stylesheets/utility.css">
   <link rel="stylesheet" type="text/css" href="./stylesheets/attribution.css">
+  <script src="./scripts/coming-soon.js" type="module" defer></script>
   <title>Frontend Mentor | Ping coming soon page</title>
 </head>
 <body>
@@ -21,8 +22,10 @@
 
       <form method="POST" action="javascript:void(0);" class="coming-soon__form">
         <label for="coming-soon__email-input-id" class="u-sr-only">Email Address</label>
-        <input type="email" id="coming-soon__email-input-id" class="coming-soon__email-input" placeholder="Your email address..." required>
-        <button type="submit" class="coming-soon__submit-button u-fw-sm-bold">Notify Me</button>
+        <div class="coming-soon__email-input-container">
+          <input type="email" id="coming-soon__email-input-id" class="coming-soon__email-input js-email-input" placeholder="Your email address..." required>
+        </div>
+        <button type="submit" class="coming-soon__submit-button u-fw-sm-bold js-submit-button">Notify Me</button>
       </form>
       <img src="./images/illustration-dashboard.png" alt="Illustration of a dashboard" class="coming-soon__illustration">
 
