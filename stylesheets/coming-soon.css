@@ -40,7 +40,7 @@
   color: var(--color-neutral-2);
   background-color: transparent;
   height: 3.5rem;
-  width: 26.3125rem;
+  max-width: 26.3125rem;
   padding: 1.25rem 1.875rem;
   border: 0.0625rem solid hsl(229, 27%, 85%);
   border-radius: 26.3125rem;
@@ -128,4 +128,69 @@
   font-size: 0.75rem;
   letter-spacing: 0.0016891891891892rem;
   color: var(--color-neutral-1);
+}
+
+@media (max-width: 700px) {
+  .coming-soon__illustration {
+    width: 90%;
+    margin-bottom: 4.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .coming-soon__title {
+    font-size: 2rem;
+  }
+
+  .coming-soon__form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .coming-soon__email-input {
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  .coming-soon__submit-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 405px) {
+  .coming-soon__logo {
+    width: 4.0625rem;
+  }
+
+  .coming-soon__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .coming-soon__description {
+    font-size: 0.853125rem;
+    margin-bottom: 2rem;
+  }
+
+  .coming-soon__email-input {
+    font-size: 0.875rem;
+    line-height: 0;
+    padding: 0 1.75rem;
+  }
+
+  .coming-soon__submit-button {
+    font-size: 0.875rem;
+    margin-bottom: 4.75rem;
+  }
+
+  .coming-soon__email-input,
+  .coming-soon__submit-button {
+    height: 3rem;
+  }
+
+  .coming-soon__illustration {
+    width: 85%;
+  }
 }
