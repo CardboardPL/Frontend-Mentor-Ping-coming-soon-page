@@ -32,6 +32,36 @@
   margin-bottom: 2.3125rem;
 }
 
+.coming-soon__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 5.375rem;
+}
+
+.coming-soon__email-input-container {
+  margin-right: 0.6875rem;
+  transition: margin 0.25s ease-in-out;
+}
+
+.coming-soon__email-input-container {
+  position: relative;
+  width: clamp(22rem, 26.3125rem, 26.3125rem);
+}
+
+.coming-soon__email-input-container-invalid::after {
+  content: 'Please provide a valid email address';
+  position: absolute;
+  bottom: -1.5rem;
+  left: 1.875rem;
+  font-size: 0.8125rem;
+  font-style: italic;
+  letter-spacing: 0.0024038461538462rem;
+  color: var(--color-secondary-2);
+  width: 100%;
+}
+
 .coming-soon__email-input {
   font-size: 1rem;
   font-weight: var(--font-weight-normal);
@@ -40,12 +70,12 @@
   color: var(--color-neutral-2);
   background-color: transparent;
   height: 3.5rem;
-  max-width: 26.3125rem;
+  width: 100%;
   padding: 1.25rem 1.875rem;
-  border: 0.0625rem solid hsl(229, 27%, 85%);
+  border: 0.0625rem solid var(--main-border-color);
   border-radius: 26.3125rem;
-  margin-right: 0.6875rem;
   outline: none;
+  transition: border 0.15s ease-in-out;
 }
 
 .coming-soon__email-input::placeholder {
@@ -54,6 +84,10 @@
 
 .coming-soon__email-input:focus {
   border-color: var(--color-secondary-1);
+}
+
+.coming-soon__email-input.coming-soon__email-input-invalid {
+  border-color: var(--color-secondary-2);
 }
 
 .coming-soon__submit-button {
@@ -66,7 +100,7 @@
   border: none;
   border-radius: 3.5rem;
   box-shadow: -0.1875rem 0.25rem 1rem var(--color-secondary-1);
-  margin-bottom: 5.375rem;
+  transition: opacity 0.15s ease-in-out;
   cursor: pointer;
 }
 
@@ -93,7 +127,7 @@
   align-items: center;
   width: 1.9375rem;
   height: 1.9375rem;
-  border: 0.0625rem solid hsl(229, 27%, 85%);
+  border: 0.0625rem solid var(--main-border-color);
   border-radius: 50%;
   margin-right: 0.8125rem;
   transition: background-color 0.15s ease-in-out;
@@ -111,7 +145,7 @@
 
 .coming-soon__social-links-item:hover .coming-soon__social-links-logo,
 .coming-soon__social-links-item:focus-within .coming-soon__social-links-logo {
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
 
 .coming-soon__social-links-item > a {
@@ -143,15 +177,26 @@
   }
 
   .coming-soon__form {
-    display: flex;
     flex-direction: column;
     width: 80%;
+    margin-bottom: 4.75rem;
   }
 
-  .coming-soon__email-input {
+  .coming-soon__email-input-container {
     width: 100%;
     margin-bottom: 1rem;
     margin-right: 0;
+  }
+
+  .coming-soon__email-input-container-invalid {
+    margin-bottom: 2.75rem;
+  }
+
+  .coming-soon__email-input-container-invalid::after {
+    font-size: 0.6875rem;
+    left: 0;
+    bottom: -1.2rem;
+    text-align: center;
   }
 
   .coming-soon__submit-button {
@@ -182,7 +227,6 @@
 
   .coming-soon__submit-button {
     font-size: 0.875rem;
-    margin-bottom: 4.75rem;
   }
 
   .coming-soon__email-input,

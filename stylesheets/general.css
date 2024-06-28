@@ -20,6 +20,9 @@
   --font-weight-normal: 300;
   --font-weight-semi-bold: 600;
   --font-weight-bold: 700;
+
+  /* Border */
+  --main-border-color: hsl(229, 27%, 85%);
 }
 
 *, *::before, *::after {
