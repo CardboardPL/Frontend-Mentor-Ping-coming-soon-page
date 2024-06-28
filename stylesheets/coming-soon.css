@@ -193,9 +193,8 @@
   }
 
   .coming-soon__email-input-container-invalid::after {
-    font-size: 0.6875rem;
     left: 0;
-    bottom: -1.2rem;
+    bottom: -1.25rem;
     text-align: center;
   }
 
@@ -219,6 +218,10 @@
     margin-bottom: 2rem;
   }
 
+  .coming-soon__email-input-container-invalid::after {
+    font-size: 0.6875rem;
+  }
+  
   .coming-soon__email-input {
     font-size: 0.875rem;
     line-height: 0;
